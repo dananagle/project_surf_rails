@@ -1,3 +1,340 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section {
+  width: 1300px;
+  height: 520px;
+  margin: 0 auto;
+  background: url(../images/IMG_3025.JPG) no-repeat;
+  background-size: cover;
+}
+div#overlay {
+
+  background: rgba(48, 128, 185, 0.8);
+  width: 1300px;
+  height: 520px;
+}
+
+section h1 {
+  font-size: 6em;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+
+}
+
+section h4 {
+  font-size: 1.5em;
+  color: rgb(68, 108, 179);
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 0;
+  font-family: sans-serif;
+}
+
+section div#logo p{
+  font-size: 1.3em;
+  text-align: left;
+  float: left;
+  padding-left: 2em;
+  margin-top: 1em;
+  font-family: sans-serif;
+  color: rgb(44, 62, 80);
+  text-transform: uppercase;
+
+}
+
+section ul{
+  list-style: none;
+}
+
+section ul li {
+  font-size: 1.3em;
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  padding-right: 2em;
+  margin-top: 1em;
+  font-family: sans-serif;
+  color: rgb(68, 108, 179);
+  text-transform: uppercase;
+}
+
+article {
+  display: block;
+  float:  left;
+  width: 660px;
+  height: 1150px;
+  padding-left: 90px;
+  color: rgb(68, 108, 179);
+}
+
+article h3 {
+  font-size: 3em;
+  text-align: left;
+  color: rgb(68, 108, 179);
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+article div#blog_info {
+  width: 660px;
+  height: 50px;
+  margin-top: -30px;
+}
+
+article div#blog_info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  float:left;
+}
+article div#blog_info span#name {
+font-family: sans-serif;
+color: #c5eff7;
+font-size: 1em;
+float: left;
+font-weight: bolder;
+margin-left: 0.5em;
+margin-right: 1.5em;
+}
+
+article div#blog_info span#date {
+font-family: sans-serif;
+color: grey;
+font-size: 1em;
+text-decoration: underline;
+}
+
+article p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family:  sans-serif;
+  color: rgb(68, 108, 179);
+}
+
+article p a {
+  text-decoration: underline;
+  color: grey;
+}
+
+article p a:hover {
+  color: #c5eff7;
+}
+
+article blockquote {
+  font-size: 2em;
+  color: #c5eff7;
+  text-transform: uppercase;
+  border-left: 2px solid rgb(68,108,179);
+  padding: 1em;
+}
+
+article button {
+  font-size: 1em;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+aside {
+  width: 530px;
+  height: 1150px;
+  display: block;
+  float: left;
+}
+
+
+aside div#personal_info{
+  width: 280px;
+  height: 230px;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+
+aside div#personal_info img{
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  margin-left: 95px;
+}
+
+aside div#personal_info p{
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  color:  #2980B9;
+  font-weight: bolder;
+  font-family: sans-serif;
+
+}
+
+aside div#personal_info ul{
+  list-style: none;
+}
+
+aside div#personal_info ul li a{
+  font-size: 1em;
+  color: grey;
+  font-family: sans-serif;
+  float: left;
+  padding-right: .4em;
+}
+
+aside a:link {
+  text-transform: none;
+  text-decoration: none;
+
+}
+
+aside div#personal_info ul li a:visited {
+  color: rbg(44, 62, 80);
+}
+
+aside div#ad{
+  width: 280px;
+  height: 350px;
+  float: right;
+  margin-right: 160px;
+}
+
+aside div#ad img{
+  width: 280px;
+  height: 300px;
+  background-size: cover;
+}
+
+aside div#ad a{
+  float: right;
+  font-size: 1em;
+  color: grey;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+aside div#sidebar_heading {
+  width: 280px;
+  height: 250px;
+  float: right;
+  margin-right: 160px;
+}
+
+aside div#sidebar_heading h4{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  color: #c5eff7;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+aside div#sidebar_heading p{
+  font-size: 0.85em;
+  color: grey;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  margin-top: -30px;
+  font-weight: lighter;
+}
+
+aside div#sidebar_heading p a {
+  text-decoration: underline;
+  color: grey;
+}
+
+aside div#sidebar_heading  p a:hover {
+  color: grey;
+}
+
+
+div#popular_posts {
+  border-top: 1px solid grey;
+  width: 1300px;
+  display: block;
+  overflow: auto;
+
+}
+
+div#popular_posts h1{
+  text-align: center;
+  font-size: 4.5em;
+  font-family: sans-serif;
+  color: rgb(68, 108, 179);
+  font-weight: bolder;
+}
+
+
+div#content {
+  width: 1300px;
+  height: 330px;
+
+
+}
+
+div#content h4{
+
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 2em;
+  margin-left: 20px;
+  text-transform: uppercase;
+  margin-top: -80px;
+  font-weight: bolder;
+}
+
+div.pic {
+  width: 325px;
+  height: 330px;
+  float: left;
+}
+
+div#content .overlay2 {
+  background-color: rgba(44, 62, 80, 0.7);
+  width: 325px;
+  height: 330px;
+}
+
+div#content .overlay2:hover {
+  background-color: rgba(44, 62, 80, 0);
+}
+
+footer {
+  width: 1300px;
+  height: 100px;
+  background: rgba(41, 128, 185, 0.6);
+}
+
+footer div#logo {
+  width: 650px;
+  float: left;
+  font-family: sans-serif;
+  color: rgb(68, 108, 179);
+  font-size: 1em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+footer div#list {
+  width: 650px;
+  float: left;
+
+}
+
+footer div#list ul {
+  list-style: none;
+  margin-left: 97px;
+}
+
+footer ul li a {
+  font-family: sans-serif;
+  color: rgb(68, 108, 179);
+  text-decoration: none;
+  float: left;
+  padding-right: 0.5em;
+  font-size: 1em;
+}

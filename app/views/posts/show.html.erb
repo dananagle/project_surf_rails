@@ -1,0 +1,62 @@
+<!-- <%= image_tag 'bigtexas.jpg' %> -->
+
+
+  <article>
+    <h3> <%= @post.name.upcase %> </h3>
+      <div id="blog_info">
+        <%= image_tag 'IMG_2036.JPG' %> <p><span id="name">Anna Lucia</span> on <span id="date">  Wednesday June 22nd 10:22 <a href="#"></a>m</span> </p>
+      </div>
+        <p> I am I, Don Quixote, the Lord of La Mancha.  My destiny calls and I go.  And the wild winds of fortune will carry me onward, wihter soever they blow. Wither soever they blow, onward to glory I go.  I am I, Don Quixote, the Lord of La Mancha, my destin calls and I go.  And the wild winds of fortune will carry me onward, wither soever they blow, aye, aye. Onward to glory I go.</br></br>
+          To each his Dulcinea, beside him for to stand.  A man can do most anything, outfly the bird upon the wing, hold moonlight in his hand. <a href="">Dulcinea</a>.
+        </p>
+        <blockquote> Dulcinea</blockquote>
+
+        <p> There is no Dulcinea <a href="">she's naught</a> but flame and air. But oh, how lovely life would be if every man could weave a dream to keep him from dispair.  A man needs to dream, the impossible dream, to fight the unbeatable foe, to bear the unbearable sorry, to tread where the brave dare not go.  To fight for the right without question or pause.  To be willing to march into hell for a heavenly cause.  </br></br>
+          This is my quest, to follow that star, no matter how hopeless, no matter how far.  To fight for the right, without question or pause to be willing to march into hell for a heavenly cause.  And I know if I follow that quest that my heart will lie calm when I'm laid to my rest.  And the world will be better for this.</p>
+          <button style="border: 0px none; background: rgba(44, 62, 80, 0.3) none repeat scroll 0% 0%; padding: 0px;"><i style="padding: 0.5em; background: grey none repeat scroll 0% 0%;" i class="fa fa-comment-o"></i><span style="padding: 0.5em;"> Read Comments</span>
+          </button>
+          <button style="border: 0px none; background: rgba(44, 62, 80, 0.3) none repeat scroll 0% 0%; padding: 0px;"><i style="padding: 0.5em; background: grey none repeat scroll 0% 0%;" i class="fa fa-cloud-upload"></i><span style="padding: 0.5em;"> Read Later</span>
+          </button>
+          <button style="border: 0px none; background: #2980B9 none repeat scroll 0% 0%; padding: 0px;"><i style="padding: 0.5em; background: rgba(44, 62, 80, 1) none repeat scroll 0% 0%;" i class="fa fa-share-square"></i><span style="padding: 0.5em;"> Share This Post</span>
+          </button>
+
+  </article>
+  <aside>
+  <div id="personal_info">
+    <%= image_tag 'IMG_2036.JPG' %>
+    <p>Anna Lucia</p>
+    <ul>
+      <li><a href="https://www.twitter.com">Twitter</a></li>
+      <li><a href="https://www.facebook.com">Facebook</a></li>
+      <li><a href="https://www.instagram.com">Instagram</a></li>
+    </ul>
+  </div>
+  <div id="ad">
+    <%= image_tag 'IMG_2041.JPG' %>
+    <a href="">About This Ad </a>
+  </div>
+  <div id="sidebar_heading">
+    <h4> Sidebar Heading </h4>
+    <p>And the world, <a href="">will be better for this</a> that one man, scorned and covered with scars, still strode with his last ounce of courage.  To dream the impossible dream.</p>
+  </div>
+</aside>
+<div id="popular_posts">
+  <h1> Most Popular Posts </h1>
+</div>
+
+<div id="content">
+
+  <% @post_name.reject {|p| p == @post }.each do |post| %>
+
+
+    <div class="pic" style="background: url(<%= image_path post.photo %>); background-size: cover;"><div class="overlay2"></div><h4><%= link_to post.name.capitalize, post_path(post_name: post.name) %></h4></div>
+  <% end %>
+
+-  <!-- if  post_path(post_name: post) == post_path(post_name: post) is displayed, don't display the picture. instead display extra picture -->
+-
+-  <!-- while @header = true
+-  then  -->
+-
+
+
+</div>

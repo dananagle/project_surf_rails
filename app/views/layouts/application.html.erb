@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProjectSurfRails</title>
+  <title>Surf and Rails</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+
+     <section>
+       <div id="overlay">
+         <div id="logo"> <p> Flying </p> </div>
+         <nav>
+           <ul>
+             <li>Search <i class="fa fa-search fa-flip-horizontal"></i></li>
+               <li>About</li>
+           </ul>
+          </nav>
+          <h1>IFly</h1>
+          <h4> Dynamic Page Summer 2015</h4>
+      </div>
+    </section>
+
 <%= yield %>
+
+<footer>
+  <div id="logo"> The I don't think so Copyright 2015, All Rights Reserved</div>
+  <div
+   id="list">
+  <ul>
+    <li><a href=""> Nav Item 1 |  </a></li>
+    <li><a href=""> Nav Item 2 | </a></li>
+    <li><a href=""> Nav Item 3 | </a></li>
+    <li><a href=""> Nav Item 4  </a></li>
+  </ul>
+</div>
+</footer>
 
 </body>
 </html>
